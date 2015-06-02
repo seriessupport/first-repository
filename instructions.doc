@@ -1,0 +1,393 @@
+@@ -0,0 +1,393 @@
+Message-ID: <1925298839.253.1433276822912.JavaMail.confluence@confluence.minnesota>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_252_705550218.1433276822909"
+
+------=_Part_252_705550218.1433276822909
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>SBCTC UCP Interface Implementation Process</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+#main {
+    padding-bottom: 1em !important; /* The default padding of 6em is too mu=
+ch for printouts */
+}
+
+body {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+}
+
+body, #full-height-container, #main, #page, #content, .has-personal-sidebar=
+ #content {
+    background: #fff    !important;
+    color: #000         !important;
+    border: 0           !important;
+    width: 100%         !important;
+    height: auto        !important;
+    min-height: auto    !important;
+    margin: 0           !important;
+    padding: 0          !important;
+    display: block      !important;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    color: #000;
+}
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+    font-family: Arial, Helvetica, FreeSans, sans-serif;
+    page-break-after: avoid;
+}
+pre {
+    font-family: Monaco, "Courier New", monospace;
+}
+
+#header,
+.aui-header-inner,
+#navigation,
+#sidebar,
+.sidebar,
+#personal-info-sidebar,
+.ia-fixed-sidebar,
+.page-actions,
+.navmenu,
+.ajs-menu-bar,
+.noprint,
+.inline-control-link,
+.inline-control-link a,
+a.show-labels-editor,
+.global-comment-actions,
+.comment-actions,
+.quick-comment-container,
+#addcomment {
+    display: none !important;
+}
+
+.comment .date::before {
+    content: none !important; /* remove middot for print view */
+}
+
+h1.pagetitle img {
+    height: auto;
+    width: auto;
+}
+
+.print-only {
+    display: block;
+}
+#footer {
+    position: relative !important; /* CONF-17506 Place the footer at end of=
+ the content */
+    margin: 0;
+    padding: 0;
+    background: none;
+    clear: both;
+}
+
+#poweredby {
+    border-top: none;
+    background: none;
+}
+
+#poweredby li.print-only {
+    display: list-item;
+    font-style: italic;
+}
+
+#poweredby li.noprint {
+    display:none;
+}
+
+
+/* no width controls in print */
+.wiki-content .table-wrap,
+.wiki-content p,
+.panel .codeContent,
+.panel .codeContent pre,
+.image-wrap {
+    overflow: visible !important;
+}
+
+/* TODO - should this work? */
+#children-section,
+#comments-section .comment,
+#comments-section .comment .comment-body,
+#comments-section .comment .comment-content,
+#comments-section .comment p {
+    page-break-inside: avoid;
+}
+
+#page-children a {
+    text-decoration: none;
+}
+
+/**
+ hide twixies
+
+ the specificity here is a hack because print styles
+ are getting loaded before the base styles. */
+#comments-section.pageSection .section-header,
+#comments-section.pageSection .section-title,
+#children-section.pageSection .section-header,
+#children-section.pageSection .section-title,
+.children-show-hide {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.children-show-hide.icon {
+    display: none;
+}
+
+/* personal sidebar */
+.has-personal-sidebar #content {
+    margin-right: 0px;
+}
+
+.has-personal-sidebar #content .pageSection {
+    margin-right: 0px;
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>SBCTC UCP Interface Implementation Process</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"SBCTCUCPInterfaceImplementationProcess-Overview">Overview=
+</h1>
+<p>The Universal Control Processing SIS-Series25 interface will be implemen=
+ted at some SBCTC schools as a way to push data from the SIS to 25live.</p>
+<ul>
+<li>Once the Campus solutions Implementation is live, this program becomes =
+obsolete.</li>
+<li>This is a one way push, of data from SMS to 25live</li>
+<li>There are 2 parts to this process
+<ul>
+<li>An extraction program. A stored database procedure that pulls data from=
+ SMS and writes it to a datain.dat file</li>
+<li>The SIS-Series25 Interface that interprets the datain.dat file and send=
+s the data to 25Live.</li>
+</ul></li>
+</ul>
+<h2 id=3D"SBCTCUCPInterfaceImplementationProcess-InstallingtheInterface:">I=
+nstalling the Interface:</h2>
+<p>Download <a class=3D"external-link" href=3D"http://corp.collegenet.com/d=
+ownloads/r25/v3.34/v_tcsI3.4_Interface.zip" rel=3D"nofollow">Series25-SIS I=
+nterface v.3.4</a> from the software download page of knowledge25.collegene=
+t.com</p>
+<p>Install the interface using these instructions: <a href=3D"/display/Seri=
+es25/Series25-SIS+Interface+v3.4+Installation+Instructions">Series25-SIS In=
+terface v3.4 Installation Instructions</a></p>
+<h5 id=3D"SBCTCUCPInterfaceImplementationProcess-ThesevaluesarespecifictoUC=
+Pschools">These values are specific to UCP schools</h5>
+<ol>
+<li>Enter WebServices URL</li>
+<li>Enter 'requestsave'</li>
+<li>Select your SIS choose UCP</li>
+<li>Term code length: 4 assuming sample term code like: 'B561'</li>
+<li>Database Brand 'Datain'</li>
+<li>Institution Code 'SBCTC'</li>
+<li>Place the ctrl.dat file in the ~/vCal/text_data directory</li>
+</ol>
+<h2 id=3D"SBCTCUCPInterfaceImplementationProcess-ConfiguretheInterface:">Co=
+nfigure the Interface:</h2>
+<p>The academic cycle training will provide more detailed explanation of th=
+ese settings. Consider making these changes from the default.</p>
+<p>These changes can be made by accessing Configuration &gt; Configuration =
+Menu from the Interface main menu.</p>
+<h4 style=3D"margin-left: 30.0px;" id=3D"SBCTCUCPInterfaceImplementationPro=
+cess-DatabaseInformation:">Database Information:</h4>
+<p style=3D"margin-left: 60.0px;">SIS_Version =3D 1</p>
+<p style=3D"margin-left: 60.0px;">R25_USERNAME =3D Interface</p>
+<p style=3D"margin-left: 60.0px;">R25_Password =3D &lt;ENTERPASSWORD&gt;</p=
+>
+<p style=3D"margin-left: 60.0px;">re-type series25 Password &lt;ENTERPASSWO=
+RD&gt;</p>
+<h4 style=3D"margin-left: 30.0px;" id=3D"SBCTCUCPInterfaceImplementationPro=
+cess-Environment:">Environment:</h4>
+<p style=3D"margin-left: 60.0px;">EVENT_TYPE =3D Section</p>
+<h4 style=3D"margin-left: 30.0px;" id=3D"SBCTCUCPInterfaceImplementationPro=
+cess-vCalendarOptions:">vCalendar Options:</h4>
+<p style=3D"margin-left: 60.0px;">ADD_TERM_CAT =3D ON</p>
+<p style=3D"margin-left: 60.0px;">R25_MULTI_DB =3D OFF</p>
+<h4 style=3D"margin-left: 30.0px;" id=3D"SBCTCUCPInterfaceImplementationPro=
+cess-ProcessingOption:">Processing Option:</h4>
+<p style=3D"margin-left: 60.0px;">GET_INSTRUCTOR: ON</p>
+<h2 id=3D"SBCTCUCPInterfaceImplementationProcess-TestingtheInterface:">Test=
+ing the Interface:</h2>
+<p>These steps are to ensure there is a connection between</p>
+<ol>
+<li>Place a datain&lt;TERM&gt;.dat file in the ~/vCal/text_data/ directory.=
+ (You can test with just a few classes by manually removing files from the =
+generated file)</li>
+<li>Launch the interface</li>
+<li>Select Export/Import &gt; Batch Export</li>
+<li>Enter the Term Number and click 'Run'</li>
+<li>Check that the following happens<br />
+<ol>
+<li>You receive an email from the <a href=3D"/display/WSW/A+New+SaaS+vCal+I=
+mport+Process">SaaS vCal Import Process</a></li>
+<li>vCal files show up in the ~/vCal/requestsave folder</li>
+<li><a href=3D"/display/Series25/Check+for+Import+Problems+via+25Live">Chec=
+k for Import Problems via 25Live</a></li>
+</ol></li>
+</ol>
+<h2 id=3D"SBCTCUCPInterfaceImplementationProcess-ImplementingtheExtractionp=
+rogram:">Implementing the Extraction program:</h2>
+<ol>
+<li>This will likely be addressed in additional documentation.</li>
+<li>Edit the web.config so to place the datain.dat to the ~/vCal/text_data/=
+ folder.</li>
+</ol>
+<h2 id=3D"SBCTCUCPInterfaceImplementationProcess-Howthestoredprocedureofthe=
+extractionprogramworks:">How the stored procedure of the extraction program=
+ works:</h2>
+<p>A stored procedure pulls data from SMS. It takes the following steps</p>
+<ol>
+<li>Creates a group 'CTE'
+<ol>
+<li>This contains all class data for an entire quarter with the following o=
+missions.</li>
+<li>
+<ol>
+<li>Meeting pattern cannot be 'ARRANGED'</li>
+<li>RoomID isn't 'HOS%'</li>
+<li>Section Status isn't Z or X</li>
+</ol></li>
+</ol></li>
+<li>Creates CTE1 to find a list of clustered classes. <br />
+<ol>
+<li>CTE1 is a subset of CTE.</li>
+<li>2 or more classes are considered clustered if they meet the following c=
+riteria
+<ol>
+<li>Match on Start time</li>
+<li>Match on start week</li>
+<li>Match on meeting pattern (days of the week)</li>
+<li>Match on room name</li>
+<li>Do not match on at least one of the following<br />
+<ol>
+<li>Course number</li>
+<li>Section number</li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li>Creates CTE2 sorts and groups CTE1****<br />
+<ol>
+<li>CTE2 is a subset of CTE1</li>
+<li>Classes are clustered if they match on:
+<ol>
+<li>Room Assignment</li>
+<li>start time</li>
+<li>end time</li>
+<li>start week</li>
+<li>finish week</li>
+<li>meeting days</li>
+</ol></li>
+<li>Classes are ordered by:<br />
+<ol>
+<li>Room Name</li>
+<li>start time</li>
+<li>end time</li>
+<li>start week</li>
+<li>finish week</li>
+<li>meeting days</li>
+</ol></li>
+<li>Each course is given a number within the partition called 'group number=
+'</li>
+</ol></li>
+<li>Creates CTE3 and adds assignment codes
+<ol>
+<li>Assignment codes are given to placed on classes based on group number<b=
+r />
+<ol>
+<li><p>WHEN RoomName IS NULL and GroupNumber =3D 1 THEN 'NSM'</p></li>
+<li><p>WHEN RoomName IS NULL and GroupNumber &lt;&gt; 1 THEN 'WSM'</p></li>
+<li><p>WHEN RoomName IS NOT NULL and Groupnumber =3D 1 THEN 'HSM'</p></li>
+<li><p>WHEN RoomName IS NOT NULL AND GroupNumber &lt;&gt; 1 THEN 'VSM'</p><=
+/li>
+</ol></li>
+<li>Assignment codes - for more detail see page 244 of the I interface PDF<=
+br />
+<ol>
+<li>NSM - No Space assignment not cross listed</li>
+<li>WSM - No Space assignment is cross listed - Must im</li>
+<li>HSM - Has space assignment is lead cross listed class</li>
+<li>VSM - Has space assignment is cross-listed with an ASM class.</li>
+</ol></li>
+</ol></li>
+<li>Unions all classes to be imported. Creates CTE4.</li>
+<li>Creates CTE5 and assigns meeting numbers
+<ol>
+<li>Assigns meeting numbers for classes with multiple meeting patterns</li>
+<li>Classes that have the same course number and section will be assigned d=
+ifferent meeting pattern numbers so the interface knows to treat them as on=
+e event.</li>
+</ol></li>
+</ol>
+<p>**** If your institution would like to make space assignments utilizing =
+the 25live Optimizer, Note that the creation of CTE2 will need be changed f=
+rom the description above.&nbsp;Schedulers would assign all clustered/cross=
+-listed classes in a clusteritemnumber in SMS. CTE2 would partition by 'clu=
+ster item number and and could sort by similar criteria replacing roomName =
+with clusteritemnumber.</p>
+    </div>
+</body>
+</html>
+------=_Part_252_705550218.1433276822909--
